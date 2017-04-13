@@ -1,0 +1,3 @@
+#Исключить Virtual Enviroment из Git.
+.venv
+.venvv

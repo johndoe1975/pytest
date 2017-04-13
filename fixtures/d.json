@@ -1,0 +1,76 @@
+[
+{
+    "model": "student.student",
+    "pk": 1,
+    "fields": {
+        "full_name": "Vays",
+        "dateofbirth": "2017-04-10",
+        "ticket_number": 42,
+        "enroled_group": 1
+    }
+},
+  {
+    "model": "student.student",
+    "pk": 2,
+    "fields": {
+        "full_name": "Petr",
+        "dateofbirth": "2014-04-10",
+        "ticket_number": 43,
+        "enroled_group": 1
+    }
+},
+  {
+    "model": "student.student",
+    "pk": 3,
+    "fields": {
+        "full_name": "Dima",
+        "dateofbirth": "2015-04-10",
+        "ticket_number": 44,
+        "enroled_group": 2
+    }
+},
+  {
+    "model": "student.student",
+    "pk": 4,
+    "fields": {
+        "full_name": "Vays",
+        "dateofbirth": "2016-04-10",
+        "ticket_number": 45,
+        "enroled_group": 3
+    }
+},
+  {
+    "model": "student.student",
+    "pk": 1,
+    "fields": {
+        "full_name": "Yura",
+        "dateofbirth": "2017-04-10",
+        "ticket_number": 42,
+        "enroled_group": 3
+    }
+},
+{
+    "model": "student.group",
+    "pk": 1,
+    "fields": {
+        "name": "BG",
+        "captain": 1
+    }
+},
+  {
+    "model": "student.group",
+    "pk": 2,
+    "fields": {
+        "name": "CG",
+        "captain": 1
+    }
+},
+  {
+    "model": "student.group",
+    "pk": 3,
+    "fields": {
+        "name": "DG",
+        "captain": 1
+    }
+}
+]

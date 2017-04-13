@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Edit group</title>
+</head>
+<body>
+
+Edit group <br>
+<form action="{% url 'edit_group' object.pk %}" method="post">
+{% csrf_token %}
+
+    {{ form.as_p }}
+
+<input type="submit" value="Change" />
+</form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Group list</title>
+</head>
+<body>
+<table border="1">
+<thead>
+<tr>
+    <th>Full name</th>
+    <th>Ticket number</th>
+    <th>Date of birth</th>
+    <th>Enrolled group</th>
+</tr>
+</thead>
+    <tbody>
+    {% for st in students %}
+    <tr>
+        <td>{{ st.full_name }}</td>
+        <td>{{ st.ticket_number }}</td>
+        <td>{{ st.dateofbirth }}</td>
+        <td> <a href="{% url 'edit_group' st.enroled_group.id %}"> {{ st.enroled_group.name }} </a></td>
+        <td><a href="{% url 'edit_student' st.pk %}">Edit</a></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

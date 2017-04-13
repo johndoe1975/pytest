@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Edit group</title>
+</head>
+<body>
+
+Edit group <br>
+<form action="{% url 'delete_group' object.pk %}" method="post">
+{% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    <input type="submit" value="Confirm" />
+</form>
+
+</body>
+</html>

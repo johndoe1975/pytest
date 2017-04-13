@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Group list</title>
+</head>
+<body>
+{#{{ settings.INSTALLED_APPS }}#}
+{% for g in groups %}
+    <a href="{% url 'list_students' g.id %}">{{ g.name }} {{ g.captain.full_name }} {{ g.student_set.count }} </a>  <a href="{% url 'delete_group' g.pk %}"> Delete </a><br>
+{% endfor %}
+</body>
+</html>
